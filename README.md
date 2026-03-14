@@ -253,6 +253,38 @@ await withAnchorBrowser(async (page) => {
 
 ---
 
+## Known Selectors Reference
+
+> These CSS selectors were observed in SAP Fiori web interfaces. Enterprise applications update their UIs — verify against your specific instance and submit PRs when selectors break.
+
+| Element | Selector | Notes |
+|---------|----------|-------|
+| Login: username | `input[name="loginfmt"]` | Login form |
+| Login: password | `input[type="password"]` | Login form |
+| Login: submit | `input[type="submit"]` | Login form |
+| Login: mfa code | `input[name="otc"]` | Login form |
+| create purchase order: launchpad search | `#sf` | |
+| create purchase order: app tile | `.sapUshellTile` | |
+| create purchase order: supplier field | `input[id*="Supplier-inner"]` | |
+| create purchase order: material input | `input[id*="Material-inner"]` | |
+| create purchase order: save btn | `button[title="Save"]` | |
+| approve workflow: my inbox tile | `.sapUshellTile[title*="My Inbox"]` | |
+| approve workflow: task list | `.sapMList .sapMListItem` | |
+| approve workflow: approve btn | `button[id*="Approve"]` | |
+| approve workflow: confirm dialog | `.sapMDialogScrollCont button[id*="OK"]` | |
+| extract financial data: report app | `[title*="Financial"]` | |
+| extract financial data: date from | `input[id*="DateFrom-inner"]` | |
+| extract financial data: date to | `input[id*="DateTo-inner"]` | |
+| extract financial data: export excel | `button[title*="Export"]` | |
+| manage invoices: invoice app | `[title*="Invoice"]` | |
+| manage invoices: invoice list | `.sapMList .sapMListItem` | |
+| manage invoices: match btn | `button[title*="Match"]` | |
+| manage invoices: post btn | `button[title*="Post"]` | |
+
+> ⚠️ Selectors are best-effort. Run `node src/utils.js --verify-selectors` to test against your instance.
+
+---
+
 ## More Browser Automation Projects
 
 This is part of the **[Browser Automation Hub](https://github.com/Browser-Automation-Hub)** — a collection of open-source browser automation scaffolds for systems with poor or no API support:

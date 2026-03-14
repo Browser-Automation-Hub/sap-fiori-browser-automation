@@ -21,7 +21,7 @@ This system uses **SSO** (SAP IAS / Azure AD). The OSS version provides SAML ses
 ## Quick Start
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/sap-fiori-browser-automation.git
+git clone https://github.com/Browser-Automation-Hub/sap-fiori-browser-automation.git
 cd sap-fiori-browser-automation
 npm install
 cp .env.example .env

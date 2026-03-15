@@ -1,7 +1,7 @@
 {
-  "name": "sap-fiori-browser-automation",
+  "name": "@browser-automation-hub/sap-fiori-browser-automation",
   "version": "1.0.0",
-  "description": "Browser automation for SAP Fiori — automate procurement, manage purchase orders, extract financial data, and navigate SAP S/4HANA Fiori apps without the SAP API.",
+  "description": "Browser automation for SAP Fiori — automate procurement, purchase orders, and financial data extraction",
   "main": "src/actions.js",
   "scripts": {
     "start": "node examples/basic-login.js",
@@ -16,7 +16,7 @@
     "browser-automation",
     "puppeteer",
     "playwright",
-    "anchorbrowser",
+    "anchor-browser",
     "nodejs"
   ],
   "license": "MIT",
@@ -35,5 +35,8 @@
   "homepage": "https://github.com/Browser-Automation-Hub/sap-fiori-browser-automation#readme",
   "bugs": {
     "url": "https://github.com/Browser-Automation-Hub/sap-fiori-browser-automation/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
